@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
     int count, num1 = 1, num2 = 2, next;
