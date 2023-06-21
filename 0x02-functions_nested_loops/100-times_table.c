@@ -30,7 +30,7 @@ void print_times_table(int n)
                 _putchar(' ');
             }
             else if (result < 100)
-            {
+           {
                 _putchar(' ');
                 _putchar(' ');
             }
@@ -46,4 +46,3 @@ void print_times_table(int n)
         _putchar('\n');
     }
 }
-
