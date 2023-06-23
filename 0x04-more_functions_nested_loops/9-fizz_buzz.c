@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,33 +9,35 @@
  */
 int main(void)
 {
-	int i;
+    int i;
 
-	for (i = 1; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 != 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0 && i % 3 != 0)
-		{
-			printf("Buzz");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i == 1)
-		{
-			printf("%d", i);
-		}
-		else
-		{
-			printf(" %d", i);
-		}
-	}
-	printf("\n");
+    for (i = 1; i <= 100; i++)
+    {
+        if (i % 3 == 0 && i % 5 != 0)
+        {
+            printf("Fizz");
+        }
+        else if (i % 5 == 0 && i % 3 != 0)
+        {
+            printf("Buzz");
+        }
+        else if (i % 3 == 0 && i % 5 == 0)
+        {
+            printf("FizzBuzz");
+        }
+        else
+        {
+            printf("%d", i);
+        }
 
-	return (0);
+        if (i != 100) /* Print a space after each number except for the last one */
+        {
+            printf(" ");
+        }
+    }
+
+    printf("\n");
+
+    return (0);
 }
 
